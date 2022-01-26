@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2022 at 02:50 PM
+-- Generation Time: Jan 26, 2022 at 09:08 AM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.2
 
@@ -42,10 +42,14 @@ CREATE TABLE `barang` (
 INSERT INTO `barang` (`kode_barang`, `nama_barang`, `harga_barang`, `deskripsi_barang`, `foto_barang`) VALUES
 ('BR001', 'Indomie Kuah', 3000, 'Indomie Seleraku', ''),
 ('BR002', 'Luwak White Coffee', 1500, 'Kopi Nikmat nyaman di lambung', ''),
-('br005', 'Bangbang', 2500, 'makanan ringan', ''),
 ('br006', 'tas', 5555, 'aksesoris', ''),
 ('br007', 'bawang', 500, 'bawang putih', ''),
-('BR009', 'roti', 3000, 'roti keju', '');
+('BR009', 'roti', 3000, 'roti keju', ''),
+('BR013', 'Lucky Numbers', 13, 'bisa', ''),
+('br069', 'hak', 424576, 'hfghag', 'default.png'),
+('BR099', 'kain katun', 200000, 'Buat gamis', 'BR099.png'),
+('BR125', 'Indomie Goreng', 3000, 'Indomie Goreng Ayam bawang', 'BR125.jpg'),
+('bt000', 'jahjkah', 7588, 'hjfgag', 'default.png');
 
 -- --------------------------------------------------------
 
@@ -65,7 +69,8 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `username`, `password`, `nama`) VALUES
-(1, 'admin', '$2y$10$gj9LIcJFyJ9hQZfNxJPzkuvB4cwL5vRPnSKOUmTVx5EDROL7r9MMe', 'Lionel Messi');
+(1, 'admin', '$2y$10$gj9LIcJFyJ9hQZfNxJPzkuvB4cwL5vRPnSKOUmTVx5EDROL7r9MMe', 'Lionel Messi'),
+(2, 'dur', '$2y$10$mV3IlaeNOxDFHKUYZS3miOfGbo9bmhluLy3sDfNbvPb1r6iRvkxMa', 'Abdurahman');
 
 --
 -- Indexes for dumped tables
@@ -91,7 +96,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
